@@ -3,4 +3,30 @@ extends ./layout/index
 block contenido
     main.container.mt-5
         .row 
-            h1= pagina
+            .col-md-5 
+                img(src="img/nosotros.jpg", alt="imagen sobre nosotros", class="img-fluid")
+            .col-md-7
+                h1= pagina
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas fermentum enim. Aliquam ipsum mauris, pretium a egestas quis, dictum quis nulla. In auctor tellus in sapien euismod, ac cursus neque accumsan. Sed pretium risus at maximus convallis. Praesent aliquam urna eu enim fringilla, quis malesuada orci mattis.
+
+                p In hac habitasse platea dictumst. Duis eget facilisis risus. Nullam ligula risus, tincidunt a scelerisque et, tincidunt id risus. Fusce posuere est quis molestie ullamcorper. Morbi vel sem vitae sem molestie consequat. Donecsed tristique sapien. Donec consequat quam metus, sed eleifend nisi maximus in. Sed ante tortor, sagittis eu loremsit amet, commodo facilisis eros. Etiam vitae venenatis lectus. Nunc lobortis vel metus eu aliquam. Donec aliquamlacinia odio, vel imperdiet erat convallis vel. Etiam id lacus id ex dignissim eleifend vel at lectus.
+
+                p Integer gravida ullamcorper nisl, quis ultricies dui viverra id. Maecenas ultricies odio quis ante tinciduntaccumsan. Aliquam luctus orci vitae nulla aliquam, et dignissim lectus finibus. Vestibulum vulputate magna utpulvinar sagittis. Pellentesque id fringilla est. Nulla gravida, purus a varius luctus, mauris lorem tinciduntnunc, sed viverra felis quam quis lorem. Integer tempor, est vel gravida mollis, ligula odio interdum ante, eutincidunt elit nibh vel eros. Phasellus sit amet nibh aliquam arcu pellentesque finibus accumsan id justo. Sedegestas magna at porttitor tincidunt. Maecenas elit orci, fringilla a ligula nec, hendrerit pulvinar dolor.
+
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid md-4")
+                    h2.mb-4 Seguridad
+                    p Sedegestas magna at porttitor tincidunt. Maecenas elit orci, fringilla a ligula nec, hendrerit pulvinar dolor.
+
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid md-4")
+                    h2.mb-4 Mejores destinos
+                    p Sedegestas magna at porttitor tincidunt. Maecenas elit orci, fringilla a ligula nec, hendrerit pulvinar dolor.
+
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid md-4")
+                    h2.mb-4 Los Mejores Precios
+                    p Sedegestas magna at porttitor tincidunt. Maecenas elit orci, fringilla a ligula nec, hendrerit pulvinar dolor.
