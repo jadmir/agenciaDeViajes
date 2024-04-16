@@ -9,6 +9,15 @@ const port = process.env.PORT || 4000
 //Habilitar pug
 app.set('view engine', 'pug')
 
+//Obtener el año actual 
+app.use((req, res, next) => {
+    const year = new Date()
+
+    res.locals.ActualYear = year.getFullYear() 
+    res.locals.nombresitio = "Agencia de Viajes"
+    return next()
+})
+
 //definir la carpeta publica
 app.use(express.static('public'))
 
